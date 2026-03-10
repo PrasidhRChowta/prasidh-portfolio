@@ -1,38 +1,39 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
-import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Client Web & Mobile Suite",
+    category: "Full Stack Application",
+    tools:
+      "React.js, Flutter (Dart), Firebase Authentication, REST APIs, Git/Bitbucket",
+    image: "/images/react2.webp",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "Authentication & User Management",
+    category: "Security & Auth",
+    tools:
+      "Firebase Auth (email/password, social login, OTP), token & refresh flows",
+    image: "/images/express.webp",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "Full Stack Web Features",
+    category: "Web Development",
+    tools: "React.js, Node.js, Express.js, HTML5, CSS3, REST APIs",
+    image: "/images/react.webp",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "Data & Persistence Layer",
+    category: "Backend & Databases",
+    tools: "MySQL, MongoDB, Firebase Firestore, REST API integration",
+    image: "/images/mysql.webp",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Tooling & Delivery",
+    category: "Dev Tools & Workflow",
+    tools: "Git, Docker, Jenkins, Agile/Scrum, Bitbucket",
+    image: "/images/javascript.webp",
   },
 ];
 
@@ -113,9 +114,6 @@ const Work = () => {
                           <p>{project.tools}</p>
                         </div>
                       </div>
-                    </div>
-                    <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
                     </div>
                   </div>
                 </div>
