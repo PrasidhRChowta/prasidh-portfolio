@@ -1,10 +1,7 @@
 declare module "gsap-trial/SplitText" {
-  // Minimal typing to satisfy TypeScript for gsap-trial SplitText usage
+  // Minimal, loose typings to satisfy TypeScript for gsap-trial SplitText usage
   export class SplitText {
-    constructor(
-      target: string | Element | Element[] | NodeListOf<Element>,
-      vars?: Record<string, unknown>
-    );
+    constructor(target: any, vars?: any);
 
     chars: HTMLElement[];
     words: HTMLElement[];
@@ -15,4 +12,5 @@ declare module "gsap-trial/SplitText" {
 
   export default SplitText;
 }
+
 
